@@ -1,0 +1,123 @@
+.header{
+    width: 100%;
+    background-color: #A11E1E ;
+    height: 4em;
+}
+.icon{
+    color: white; 
+    float: right;
+    margin: 5% 10% 0 0;
+    font-size: 1.5em;
+}
+.logo{
+    margin: 5% 0 0 4%;
+}
+.fa-sharp{
+    float: right;
+    color: white;
+    font-size: 1.5em;
+    margin: 5% 5% 0 0;
+}
+.navigation{
+    visibility: hidden;
+}
+
+.mobile-navigation{
+    visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    padding-top: 3em;
+    background-color: #d9d9d9;
+    transition: width 2s;
+}
+
+.mobile-navigation li{
+    clear: right;
+    color: #A11E1E;
+    margin: 0 0 2em 1.5em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.fa-xmark{
+    font-size: 2.5em;
+    /* border: 2px solid #A11E1E; */
+    /* background-color: #A11E1E; */
+    color: #A11E1E;
+    float: right;
+    margin: -7% 10% 20% 0;
+}
+
+@media screen and (min-width: 480px) {
+
+    .logo{
+        margin: 2.5% 0 0 5%;
+    }
+    .fa-bars{
+        visibility: hidden;
+    }
+    .navigation{
+        padding-top: 3.5%;
+        visibility: visible;
+        float: right;
+    }
+    .navigation li, .footerNav li{
+        display: inline-block;
+        color: white;
+        margin-right: .7em;
+    }
+    .navigation li:last-child{
+        margin-right: 0;
+    }
+    
+   .topSection{
+    padding-top: 3em;
+    width: 90%;
+    display: grid;
+    grid-template-areas: 'slider about' auto auto
+                    /auto auto;
+    margin-left: 5% ;
+    
+   } 
+
+   .slider{
+    grid-area: slider;
+    width: 45%;
+   margin: 0;
+    height: 23em;
+   }
+   .about{
+    grid-area: about;
+    width: 50%;
+    margin-left: 50%;
+   }
+
+   .services{
+    width: 93%;
+    margin-left: 3%;
+   }
+
+   .services section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+ 
+
+    .services div{
+        width: 50%;
+    }
+
+   .icons{
+    left: 78%;
+   }
+   .line{
+    margin-top: 12%;
+   }
+
+}
