@@ -23,7 +23,6 @@
 }
 
 .mobile-navigation{
-    visibility: hidden;
     position: absolute;
     height: 100%;
     width: 0;
@@ -31,6 +30,10 @@
     left: 0;
     padding-top: 3em;
     background-color: #d9d9d9;
+    
+}
+.mobile-navigation{
+    width: 70%;
     transition: width 2s;
 }
 
@@ -44,8 +47,6 @@
 }
 .fa-xmark{
     font-size: 2.5em;
-    /* border: 2px solid #A11E1E; */
-    /* background-color: #A11E1E; */
     color: #A11E1E;
     float: right;
     margin: -7% 10% 20% 0;

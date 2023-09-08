@@ -1,6 +1,6 @@
 <header class="header">
     <img class="logo" src="./assets/img/IO SPINE logo 1.png" alt="io-spine logo">
-    <fa-icon class="icon"  [icon]="faBars"></fa-icon>
+    <fa-icon (click)="toggleMobileNav()" class="icon"  [icon]="faBars"></fa-icon>
     <nav class="navigation">
         <ul>
             <li>Home</li>
@@ -11,8 +11,8 @@
         </ul>
     </nav>
 
-    <nav  class="mobile-navigation">
-        <i class="fa-solid fa-xmark"></i>
+    <nav *ngIf="show"  class="mobile-navigation">
+        <fa-icon (click)="toggleMobileNav()" class="fa-xmark"  [icon]="faXmark"></fa-icon>
         <ul class="top-nav-ul">
             <li>Home</li>
             <li>Academy</li>

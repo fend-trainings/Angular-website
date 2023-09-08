@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit } from '@angular/core';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -10,11 +10,15 @@ export class HeaderComponent {
   show:boolean =  false;
   screensize = window.innerWidth;
   faBars = faBars;
-  
+  faXmark = faXmark
 
-  showMobile():void{
-    if(this.screensize < 480) this.show = true;
+
+  toggleMobileNav():void{
+    this.show = !this.show
+    console.log(this.show)
   }
-}
+
+} 
+
 
 

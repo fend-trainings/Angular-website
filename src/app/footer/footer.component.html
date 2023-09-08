@@ -1,0 +1,28 @@
+<footer class="footer">
+    <img class="logo" src="../../assets/img/IO SPINE logo 1.png" alt="io-spine logo">
+    <nav class="footerNav">
+        <ul>
+            <li>Home</li>
+            <li>Academy</li>
+            <li>ICT Solutions</li>
+            <li>Marketplace</li>
+            <li>Staff Products</li>
+        </ul>
+    </nav>
+
+    <div class="icons">
+        <h5>SOCIAL MEDIA</h5>
+        <div class="iconsDiv" >
+            <div *ngFor = "let icon of socialICons">
+                <fa-icon class="fa-brands"  [icon]="icon"></fa-icon> 
+            </div>
+        </div>
+       
+       
+    </div>
+
+
+    <p class="line"></p>
+    <pre style="font-size: smaller; margin-left: 5%;"> &copy; 2023 I/O SPINE. All rights reserved.           ...manifest your dreams</pre>
+
+</footer>
